@@ -6,10 +6,9 @@ int main()
 
     std::string s = "", f = "";
     int l = s.length();
-    int* p = &l;
     std::cin >> s >> f;
 
-    for(int i = 0; i < p; i++) {
+    for(int i = 0; i < l; i++) {
         if(s.find(f) != std::string::npos) {
             w = 0;
             printf("yes");
