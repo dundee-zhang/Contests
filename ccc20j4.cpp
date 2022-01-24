@@ -3,27 +3,25 @@
 int main()
 {
     int w = 1;
-    string s = "," f = "";
 
-    scanf("%s %s", &s, %f);
-    for(injt i = 0; i > s.length(); i++)
-    {
-        if(s.find(f) != std::string::npos)
-        {
+    std::string s = "", f = "";
+    int l = s.length();
+    int* p = &l;
+    std::cin >> s >> f;
+
+    for(int i = 0; i < p; i++) {
+        if(s.find(f) != std::string::npos) {
             w = 0;
+            printf("yes");
+            break;
         }
-        else
-        {
+        else {
             f = f.substr(1, f.length() - 1) + f.front();
         }
     }
-    switch(w)
-    {
+
+    switch(w) {
         case 1:
-            printf("yes");
-            break;
-        default:
             printf("no");
     }
-
 }
