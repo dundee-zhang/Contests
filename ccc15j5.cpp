@@ -1,5 +1,7 @@
 #include <cstdio>
 
+// TLE solution
+
 int solving(int piNum, int people, int minimum)
 {
     // if the number of pie * people is the same as pi, only 1 way to give out the pie
