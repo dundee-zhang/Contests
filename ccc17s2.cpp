@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+// solution doens't work
 int main() {
     int n;
 
@@ -50,7 +50,7 @@ int main() {
         std::sort(low.begin(), low.end());
         std::reverse(low.begin(), low.end());
         std::sort(high.begin(), high.end());
-        
+
         for(int i = 0; i < index; i++) {
             std::cout << low.at(i) << " ";
             std::cout << high.at(i) << " ";
