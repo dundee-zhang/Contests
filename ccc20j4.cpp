@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 int main()
 {
     int w = 1;
@@ -10,17 +9,13 @@ int main()
 
     for(int i = 0; i < l; i++) {
         if(s.find(f) != std::string::npos) {
-            w = 0;
             printf("yes");
-            break;
+            return 0;
         }
         else {
             f = f.substr(1, f.length() - 1) + f.front();
         }
     }
 
-    switch(w) {
-        case 1:
-            printf("no");
-    }
+    printf("no");
 }
